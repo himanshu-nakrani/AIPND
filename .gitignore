@@ -1,0 +1,7 @@
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+
+# Node-based tooling (if added later)
+node_modules/
+dist/
