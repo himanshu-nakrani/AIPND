@@ -54,6 +54,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.2rem;
   margin: 0;
   padding: 0;
@@ -87,6 +88,27 @@ h1 {
   color: var(--muted);
 }
 
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.hero-meta span {
+  border: 1px solid rgba(156, 163, 175, 0.28);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
 .button {
   display: inline-block;
   margin-top: 1rem;
@@ -100,6 +122,17 @@ h1 {
 
 .button:hover {
   background: var(--primary-dark);
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(156, 163, 175, 0.45);
+}
+
+.button.secondary:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: var(--primary);
 }
 
 .section {
@@ -120,11 +153,42 @@ h1 {
   gap: 1rem;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
 .card {
   background: var(--card);
   border: 1px solid rgba(156, 163, 175, 0.2);
   border-radius: 10px;
   padding: 1rem;
+}
+
+.skill-card h3 {
+  margin-top: 0;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.link-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.7rem;
 }
 
 a {
