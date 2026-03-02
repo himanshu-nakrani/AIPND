@@ -3,6 +3,7 @@ name: Deploy portfolio website
 on:
   push:
     branches:
+      - main
       - cursor/portfolio-website-repository-4227
   workflow_dispatch:
 
